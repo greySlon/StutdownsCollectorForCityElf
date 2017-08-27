@@ -21,7 +21,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     http
         .authorizeRequests()
         .antMatchers("/").permitAll()
-        .antMatchers("/forecasts/startcollector", "/feedback/get/**").hasAuthority("SYSTEM_ROLE")
+        .antMatchers("/services/forecasts/startcollector").hasAuthority("SYSTEM_ROLE")
         .and()
         .httpBasic()
         .and()
