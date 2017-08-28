@@ -7,10 +7,11 @@ buildscript {
     }
     dependencies {
         classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+        classpath('se.transmode.gradle:gradle-docker:1.2')
     }
 }
 
-group 'ShutdownsForCityElf'
+group 'cityelf'
 version '1.0.1'
 
 apply plugin: 'java'
