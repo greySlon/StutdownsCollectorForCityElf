@@ -7,6 +7,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class ShutdownsApplication {
 
   public static void main(String[] args) {
-    SpringApplication.run(ShutdownsApplication.class, args);
+    SpringApplication.run(new Object[]{ShutdownsApplication.class, ScheduledTasks.class}, args);
   }
 }
