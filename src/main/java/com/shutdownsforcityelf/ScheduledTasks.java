@@ -35,7 +35,7 @@ public class ScheduledTasks {
     System.out.println("\nParser Collector END!!!");
   }
 
-  @Scheduled(cron = "0 0 1 * * *")
+  @Scheduled(cron = "0 1 * * *")
   public void startCleaner() {
     System.out.println("\nCLEANER START!!!");
     waterForecastRepository.deleteByStartBefore(LocalDateTime.now().minusHours(hours));

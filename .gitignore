@@ -26,5 +26,4 @@ nbdist/
 out/
 jar/
 logs/
-gradle/wrapper/gradle-wrapper.jar
 src/test/
